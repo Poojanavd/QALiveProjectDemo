@@ -21,6 +21,7 @@ public class Hooks {
 	log.info("Scenario Started: "+scenario.getName());
 	Base.reader=new PropertyFileReader();
 	Browser.startBrowser();
+	Browser.deleteAllCookies();
 	Browser.maximize();
 	}
 	@After

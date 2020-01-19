@@ -57,6 +57,10 @@ public class Browser {
 	public static void maximize() {
 		Base.driver.manage().window().maximize();
 	}
+	
+	public static void deleteAllCookies() {
+		Base.driver.manage().deleteAllCookies();
+	}
 
 	public static byte[] takeScreenshot() {
 		try {
