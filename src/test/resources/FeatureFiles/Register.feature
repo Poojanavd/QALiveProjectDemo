@@ -45,8 +45,16 @@ Feature: Registraition functionality scenarios
       | FirstName | Ravi                  |
       | LastName  | Kiran                 |
       | Email     | Ravi.kiran1@gmail.com |
-      | Telephone | 9212345678            |
+      | Telephone |            9212345678 |
       | Password  | rkiran                |
     And I select the Privacy Policy
     And I click on Continue button
     Then I should see the warning message stating that the user is already created
+    
+    @Register
+    Scenario: Verify email tooltip is display when invalid email is entered
+    Given I launch the application
+    And I navigate to Account Registration page
+    When I provide the below incorrect email
+    
+    
