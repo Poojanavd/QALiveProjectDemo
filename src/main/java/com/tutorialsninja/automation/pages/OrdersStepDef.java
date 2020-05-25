@@ -10,7 +10,7 @@ public class OrdersStepDef {
 	
 	@Given("^I login to the application $")
 	public void i_login_to_the_application(){
-		
+		System.out.println("Login");
 	}
 
 	@When("^I add any product to Bag and checkout$")
